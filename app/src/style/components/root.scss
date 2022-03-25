@@ -1,0 +1,81 @@
+$whiteBac: #E5E5E5;
+$white: #FFFFFF;
+$black: #000000;
+$gray: #838383;
+$fonts: ('PlayfairDisplay-Italic',400),
+        ('PlayfairDisplay-Regular', 400),
+        ('PlayfairDisplay-RegularRoman', 400),
+        ('times-new-roman', 400);
+
+@each $name, $weight in $fonts {
+    @font-face {
+        font-family: $name;
+        src: url('../fonts/#{$name}.woff');
+        font-weight: $weight;  
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    // max-width: 1610px;
+    // width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+body {
+    background: #F4EFEC;
+}
+
+.wrapper {
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.03);
+}
+
+/* полоса прокрутки (скроллбар) */
+// ::-webkit-scrollbar {
+//     width: 1px; /* ширина для вертикального скролла */
+//     height: 0; /* высота для горизонтального скролла */
+//     background-color: #C4C4C4;
+//     display: flex;
+//     justify-content: start;
+// }
+
+// /* ползунок скроллбара */
+// ::-webkit-scrollbar-thumb {
+//     background-color: #C4C4C4;
+//     // width: 10px;
+//     // height: 100px;
+//     // box-shadow: inset 1px 1px 10px #C4C4C4;
+// }
+      
+::-webkit-scrollbar-track {
+    background-color: #C4C4C4;
+    // border-radius: 10px;
+    width: 1px;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: gray;
+    ;
+}
+::-webkit-scrollbar {
+        width: 1px; /* ширина для вертикального скролла */
+        height: 0; /* высота для горизонтального скролла */
+        background-color: #C4C4C4;
+        display: flex;
+        justify-content: start;
+        
+    }
+    body::-webkit-scrollbar {
+        width: 6px;
+    }

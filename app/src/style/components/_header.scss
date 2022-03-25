@@ -1,0 +1,116 @@
+ .header {
+     &__nav{
+         &-img {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            display: flex;
+         }
+         // &-top{
+         //    position: absolute;
+         //    display: flex;
+         //    justify-content: space-between;
+         // }
+         &-left{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background: $white;
+            width: 60px;
+            height: 2px;
+
+            &::after{
+               content: '';
+               display: block;
+               background: $white;
+               width: 60px;
+               height: 2px;
+            }
+            &::before{
+               content: '';
+               display: block;
+               background: $white;
+               width: 60px;
+               height: 2px;
+               margin: 17px 0 17px 0;
+
+            }
+
+         }
+         &-right{
+            position: absolute;
+            display: flex;
+            color: $white;
+            font-size: 18px;
+            line-height: 21px;
+            font-family: 'PlayfairDisplay-Regular';
+            padding: 14px 90px;
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            max-width: 300px;
+            width: 100%;
+            top: 50px;
+            right:50px;
+         }
+         &-link{
+            font-size: 20px;
+            line-height: 55px;
+            color: $black;
+            font-family: 'times-new-roman';
+         }
+         &-list{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+         }
+         &-lists{
+            margin-top: 50px;
+            margin-bottom: 50px;
+          }
+          &-logo{
+             margin-top: 270px;
+          }
+        &-menu{
+           position: absolute;
+           top: 0;
+           max-width: 290px;
+           width: 100%;
+           transition: 0.5s;
+           background: $white;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           opacity: 0;
+           overflow: scroll; /* Добавляем полосы прокрутки */
+            // width: 100%; /* Ширина блока */
+            height: 600px; /* Высота блока */
+            // padding: 5px;
+            top: 0;
+           &.active{
+              opacity: 1;
+           }
+        }
+        &-icon{
+           margin-right: 30px;
+        }
+        &-network{
+           margin-bottom: 50px;
+        }
+        &-languages{
+           display: flex;
+           margin-bottom: 56px;
+        }
+        &-len{
+         font-size: 20px;
+         line-height: 100%;
+         color: $black;
+         font-family: 'times-new-roman';
+         transition: 0.2s;
+         }
+         &-len:hover{
+            color: #B38934;
+         
+        }
+     }
+  }

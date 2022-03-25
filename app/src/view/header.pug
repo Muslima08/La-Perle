@@ -1,0 +1,25 @@
+header.header 
+    .header__nav
+        img.header__nav-img(src="./images/hader__img.webp", alt="")
+        .header__nav-top
+            .header__nav-left
+            a.header__nav-right(href="") RESERVATION
+            
+            
+        .header__nav-menu
+            img.header__nav-logo(src="./images/Logo.webp", alt="")
+            .header__nav-lists
+                ul.header__nav-list
+                    - var list = ['MENU', 'ABOUT', 'RESERVATION', 'NEWS', 'EVENTS', 'CAREERS', 'CONTACT']
+                        each item in list 
+                             li:a(href="#").header__nav-link=item  
+            .header__nav-network
+                a(href="")
+                    img.header__nav-icon(src="./images/facebook.webp", alt="") 
+                a(href="")
+                    img.header__nav-icon(src="./images/insta.webp", alt="") 
+                a(href="")
+                    img.header__nav-icon(src="./images/tg.webp", alt="") 
+            .header__nav-languages 
+                p.header__nav-len EN 
+                p.header__nav-len /RU

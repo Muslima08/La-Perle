@@ -1,0 +1,72 @@
+.footer{
+    &__content{
+        display: flex;
+        &-left{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          max-width: 685px;
+          width: 100%;  
+          padding: 0 10px 0 0 ;
+          flex-wrap: wrap;
+            
+        }
+        &-logo{
+            margin: 50px 0 50px 30px;
+        }
+        &-network{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+        &-icon{
+            margin-top: 25px;
+        }
+        &-all{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        &-contacts{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: start;
+        }
+        &-title{
+            font-size: 20px;
+            line-height: 25px;
+            color: $black;
+            font-family: 'PlayfairDisplay-RegularRoman';
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 55px;
+        }
+        &-titles{
+            font-size: 20px;
+            line-height: 25px;
+            color: $black;
+            font-family: 'PlayfairDisplay-RegularRoman';
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        &-all{
+            font-size: 16px;
+            line-height: 20px;
+            color: $black;
+            font-family: 'PlayfairDisplay-Regular';
+            margin-top: 10px;
+        }
+        &-alls{
+            font-size: 16px;
+            line-height: 20px;
+            color: $black;
+            font-family: 'PlayfairDisplay-Regular';
+        }
+        &-map {
+            width: 300px;
+        }
+    }
+}
