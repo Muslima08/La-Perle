@@ -212,8 +212,7 @@
         }
         &-card{
             position: relative;
-            opacity: 0;
-            &:hover{
+            &:hover .main__contents-title, &:hover .main__contents-linke, &:hover .main__contents-link,  &:hover .main__contents-titles {
                 opacity: 1;
             }
         }
@@ -239,7 +238,7 @@
             top: 0;
             margin: 50px 65px 0 65px;
             transition: 0.5s;
-            
+            opacity: 0;
         }
         &-titles{
             position: absolute;
@@ -251,7 +250,7 @@
             top: 0;
             margin: 50px 65px 0 65px;
             transition: 0.5s;
-            
+            opacity: 0;
         }
         &-linke{
             position: absolute;
@@ -267,6 +266,7 @@
             width: 100%;
             bottom: 30px;
             margin: 0 54px ;
+            opacity: 0;
          }
          &-link{
             position: absolute;
@@ -282,6 +282,7 @@
             width: 100%;
             bottom: 30px;
             margin: 0 54px ;
+            opacity: 0;
          }
     }
 }
